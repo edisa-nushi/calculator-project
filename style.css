@@ -1,0 +1,68 @@
+.header{
+    text-align:center
+}
+
+.calculator {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.output-section {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    background-color: black;
+}
+
+.output-field {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    height: 20%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: #d8d9db;
+    color: black;
+    width: 25%;
+}
+
+.button:last-child {
+    background-color: rgb(236, 156, 8);
+}
+
+.action-button.clear-btn {
+    width: 50%;
+}
+
+.number-button.zero-btn {
+    width: 75%;
+}
+
+.button:hover {
+    filter: brightness(110%);
+}
