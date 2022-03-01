@@ -60,7 +60,8 @@ for (let i=0; i<actionButton.length; i++){
     });
 }
 
-function deleteEverything() {  //deletes all data
+//deletes all data
+function deleteEverything() {  
     outputField.innerText = '0';
     firstNumber = 0; 
     secNumArray = [];
@@ -68,7 +69,8 @@ function deleteEverything() {  //deletes all data
     operator = null;
 }
 
-function doBackspace(){  //removes the latest character on the field, and if it is the last character remaining replaces it with 0.
+//removes the latest character on the field, and if it is the last character remaining replaces it with 0.
+function doBackspace(){  
     output = outputField.innerText;
     if (output.length > 1){
         output = output.substring(0, output.length-1);
@@ -79,7 +81,8 @@ function doBackspace(){  //removes the latest character on the field, and if it 
     }
 }
 
-function calculateResult(){  //calculates the result based on the operator
+//calculates the result based on the operator
+function calculateResult(){  
     secondNumber = parseInt(outputField.innerText);
     lastClicked = buttonClicked[buttonClicked.length-2];
     if (lastClicked !== '+' && lastClicked !== '-' && lastClicked !== '×' && lastClicked !== '÷'){
